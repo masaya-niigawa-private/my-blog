@@ -1,0 +1,166 @@
+/* styles.css */
+:root {
+  --primary-color: #0056a6;
+  --accent-color: #ff6600;
+  --font-color: #333;
+  --bg-color: #fff;
+  --max-width: 1000px;
+  --line-height: 1.8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--font-color);
+  background: var(--bg-color);
+  line-height: var(--line-height);
+}
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.site-header {
+  background: var(--primary-color);
+  color: #fff;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.site-title {
+  font-size: 24px;
+}
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+}
+.site-nav li + li {
+  margin-left: 20px;
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.breadcrumb {
+  background: #f2f2f2;
+  padding: 8px 0;
+  font-size: 14px;
+}
+.breadcrumb a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 40px 0;
+}
+.main-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.main-content h3 {
+  font-size: 20px;
+  margin: 24px 0 12px;
+}
+.main-content p {
+  margin-bottom: 16px;
+}
+.cta,
+.mid-cta,
+.final-cta {
+  text-align: center;
+  margin: 24px 0;
+}
+.cta-button {
+  display: inline-block;
+  background: var(--accent-color);
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.sidebar .widget {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+.profile-widget .profile-img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.widget h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.widget ul {
+  list-style: none;
+}
+.widget li + li {
+  margin-top: 8px;
+}
+.widget a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.site-footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-info h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+}
+.footer-links li + li {
+  margin-left: 20px;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .site-nav { display: none; width: 100%; }
+  .site-nav ul { flex-direction: column; }
+  .site-nav li + li { margin-left: 0; margin-top: 12px; }
+  .content { grid-template-columns: 1fr; }
+}
+
+/* script.js */
+document.addEventListener("DOMContentLoaded", function() {
+  const menuToggle = document.getElementById("menuToggle");
+  const siteNav = document.getElementById("siteNav");
+  menuToggle.addEventListener("click", () => {
+    siteNav.style.display = siteNav.style.display === "block" ? "none" : "block";
+  });
+});
