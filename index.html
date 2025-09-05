@@ -1,106 +1,140 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="エンジニア転職, 新卒1年目, 新卒2年目, SES, 未経験IT転職">
   <meta name="description" content="新卒3年目SESからITエンジニア転職を果たしたリアル体験談。転職活動のポイントや成功の秘訣を詳しく解説。">
+  <meta name="theme-color" content="#0a84ff" />
   <title>新卒からのITエンジニア転職体験談 | SES脱出ストーリー</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-container">
-      <h1 class="site-title">危機から成長へ：僕の転職体験談（新卒1年目・2年目からのエンジニア転職）</h1>
-      <button class="menu-toggle" id="menuToggle">☰</button>
-      <nav class="site-nav" id="siteNav">
-        <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="#experience">体験談</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
-          <li><a href="privacy.html">プライバシーポリシー</a></li>
-        </ul>
+  <!-- 読了率プログレス -->
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="readingBar"></div>
+  </div>
+
+  <!-- ナビ（半透明・ブラー） -->
+  <header class="nav" role="banner">
+    <div class="nav__inner container">
+      <a class="nav__brand" href="index.html" aria-label="サイトトップ">
+        <span class="brand-dot" aria-hidden="true"></span> Shift & Grow
+      </a>
+      <button class="nav__toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav"
+        aria-label="メニューを開閉">☰</button>
+      <nav class="nav__links" id="siteNav" role="navigation">
+        <a href="#experience">体験談</a>
+        <a href="#contact">お問い合わせ</a>
+        <a href="privacy.html">プライバシー</a>
+        <a href="disclaimer.html">免責事項</a>
       </nav>
-    </div>
-    <div class="breadcrumb container">
-      <a href="index.html">ホーム</a> &gt; <span>SESからIT転職体験談</span>
     </div>
   </header>
 
-  <main class="container content">
-    <article class="main-content" id="experience">
-      <h2>新卒3年目、SESからエンジニア転職を決意した僕のリアルな体験談</h2>
-      <p>こんにちは。僕は25歳、非情報系学部出身で新卒3年目にSES企業からITエンジニアへ転身を果たしました。日々の葛藤と学びを、飾らずお伝えします。</p>
+  <!-- ヒーロー（Apple風の余白＆グラデ文字） -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1 class="hero__title gradient-text">
+        危機から成長へ。
+      </h1>
+      <p class="hero__subtitle">
+        新卒1〜3年目のリアルな転職記録。<br class="sp-only">
+        迷いが確信に変わるまでのプロセスを、等身大で。
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#experience">読む</a>
+        <a class="btn btn--ghost" href="#contact">相談してみる</a>
+      </div>
+    </div>
+  </section>
 
-      <div class="cta">
+  <!-- パンくず（控えめ・読みやすく） -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">ホーム</a>
+      <span aria-hidden="true">›</span>
+      <span>SESからIT転職体験談</span>
+    </div>
+  </div>
+
+  <main class="container layout">
+    <!-- 本文 -->
+    <article class="article" id="experience">
+      <header class="article__header">
+        <h2 class="article__title">新卒3年目、SESからエンジニア転職を決意した僕のリアルな体験談</h2>
+        <p class="article__lead">こんにちは。僕は25歳、非情報系学部出身で新卒3年目にSES企業からITエンジニアへ転身を果たしました。日々の葛藤と学びを、飾らずお伝えします。</p>
+      </header>
+
+      <div class="cta reveal">
         <a href="https://px.a8.net/affiliate-code" target="_blank" rel="noopener noreferrer"
-          class="cta-button">【無料相談】レバテックキャリア</a>
+          class="btn btn--accent">【無料相談】レバテックキャリア</a>
       </div>
 
-      <section>
+      <section class="section reveal">
         <h3>1. スキルがつかない毎日に「このままでいいのか」と悩んだ日々</h3>
         <p>SESでは「画面から本番環境のデータを手作業で修正するだけ」という作業が日課に。資格も経験もないまま同じ作業を繰り返し、将来に不安を募らせました。</p>
       </section>
 
-      <section>
+      <section class="section reveal">
         <h3>2. フリーランスか転職か…迷いながらもエージェントに相談</h3>
         <p>YouTubeでフリーランスの魅力を知るも、自分の経験不足を痛感。マイナビ経由でエージェント面談を受けた結果、中途採用枠扱いと告げられ、自信が揺らぎました。</p>
       </section>
 
-      <section>
+      <section class="section reveal">
         <h3>3. 先輩との対話、そしてついに決意</h3>
         <p>60歳の先輩に相談した一言「もう答えは出ているんじゃない？」が胸に刺さり、自ら転職を決意。上司交渉を経て現場変更に成功しました。</p>
       </section>
 
-      <div class="cta mid-cta">
+      <div class="cta reveal">
         <a href="https://px.a8.net/affiliate-code2" target="_blank" rel="noopener noreferrer"
-          class="cta-button">【無料登録】Geekly</a>
+          class="btn btn--accent">【無料登録】Geekly</a>
       </div>
 
-      <section>
+      <section class="section reveal">
         <h3>4. 初めての開発現場。「向いてないかも…」という壁</h3>
         <p>Laravel、PHP、JavaScriptの本物のコードに触れた喜びの裏で、環境構築に苦戦。Udemyで学習を続け、自信を少しずつ取り戻しました。</p>
       </section>
 
-      <section>
+      <section class="section reveal">
         <h3>5. 現場移動、炎上案件、そして“退職”の決断</h3>
         <p>炎上案件でテストカバレッジ100%の無理難題が続き、ストレス限界で退職。辞めた瞬間は解放感に包まれました。</p>
       </section>
 
-      <section>
+      <section class="section reveal">
         <h3>6. 無職期間、焦り、そして資格勉強</h3>
         <p>無職の焦燥感からJava Bronze・Silver資格に挑戦し、プレッシャーの中で2つとも合格。再び市場価値を取り戻しました。</p>
       </section>
 
-      <section>
+      <section class="section reveal">
         <h3>7. フリーランスエージェントで面談、そしてチャンスを掴む</h3>
         <p>フリーランスエージェントで5社面談、1社で採用決定。タイミングと行動が大切だと痛感しました。</p>
       </section>
 
-      <section>
+      <section class="section reveal section--closing">
         <h3>8. まとめ 〜 迷っているあなたへ</h3>
         <p>優秀でなくても、行動した人にだけチャンスが訪れる。迷っているなら、まずは一歩踏み出してみてください。</p>
       </section>
 
-      <div class="cta final-cta">
-        <a href="https://px.a8.net/affiliate-code3" target="_blank" rel="noopener noreferrer" class="cta-button">
-          転職エージェントの無料相談はこちら
-        </a>
+      <div class="cta reveal">
+        <a href="https://px.a8.net/affiliate-code3" target="_blank" rel="noopener noreferrer"
+          class="btn btn--primary">転職エージェントの無料相談はこちら</a>
       </div>
     </article>
 
+    <!-- サイド（シンプルなカード） -->
     <aside class="sidebar">
-      <section class="widget profile-widget">
-        <h3>運営者プロフィール</h3>
-        <img src="profile.jpg" alt="新卒2年目の元SESエンジニアの顔写真" class="profile-img">
-        <p>25歳／元SESエンジニア。実体験を基に転職ノウハウを発信中。</p>
+      <section class="card reveal">
+        <h3 class="card__title">運営者プロフィール</h3>
+        <img src="profile.jpg" alt="運営者の顔写真" class="card__avatar">
+        <p class="card__text">25歳／元SESエンジニア。実体験を基に転職ノウハウを発信中。</p>
       </section>
-      <section class="widget categories-widget">
-        <h3>カテゴリ</h3>
-        <ul>
+
+      <section class="card reveal">
+        <h3 class="card__title">カテゴリ</h3>
+        <ul class="card__list">
           <li><a href="#">体験談</a></li>
           <li><a href="#">ノウハウ</a></li>
           <li><a href="#">比較・まとめ</a></li>
@@ -109,13 +143,13 @@
     </aside>
   </main>
 
-  <footer class="site-footer" id="contact">
-    <div class="container footer-container">
-      <div class="contact-info">
-        <h4>お問い合わせ</h4>
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+      <div>
+        <h4 class="footer__heading">お問い合わせ</h4>
         <p><a href="mailto:info@myblog.jp">info@myblog.jp</a></p>
       </div>
-      <ul class="footer-links">
+      <ul class="footer__links">
         <li><a href="privacy.html">プライバシーポリシー</a></li>
         <li><a href="disclaimer.html">免責事項</a></li>
       </ul>
