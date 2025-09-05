@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="エンジニア転職, 新卒1年目, 新卒2年目, SES, 未経験IT転職">
-  <meta name="description" content="新卒3年目SESからITエンジニア転職を果たしたリアル体験談。転職活動のポイントや成功の秘訣を詳しく解説。">
+  <meta name="keywords" content="エンジニア転職, 新卒1年目, 新卒2年目, SES, 未経験エンジニア, 転職, 学習ロードマップ, ポートフォリオ, 面接対策, フリーランス">
+  <meta name="description" content="新卒1〜3年目・未経験エンジニアのための実務直結ロードマップ。SESから転職/フリーランス転向を現実化するために、As-Is/To-Beの差分、30-60-90日計画、面接STAR、年収交渉、ポートフォリオ戦略をコンサル調で解説。">
   <meta name="theme-color" content="#0a84ff" />
-  <title>新卒からのITエンジニア転職体験談 | SES脱出ストーリー</title>
+  <title>新卒からのITエンジニア転職体験談 | SES脱出ストーリー（コンサル調ガイド）</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -23,8 +22,7 @@
       <a class="nav__brand" href="index.html" aria-label="サイトトップ">
         <span class="brand-dot" aria-hidden="true"></span> Shift & Grow
       </a>
-      <button class="nav__toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav"
-        aria-label="メニューを開閉">☰</button>
+      <button class="nav__toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="メニューを開閉">☰</button>
       <nav class="nav__links" id="siteNav" role="navigation">
         <a href="#experience">体験談</a>
         <a href="#contact">お問い合わせ</a>
@@ -38,11 +36,11 @@
   <section class="hero">
     <div class="container hero__inner">
       <h1 class="hero__title gradient-text">
-        危機から成長へ。
+        危機から成長へ。次の一手は設計できる。
       </h1>
       <p class="hero__subtitle">
-        新卒1〜3年目のリアルな転職記録。<br class="sp-only">
-        迷いが確信に変わるまでのプロセスを、等身大で。
+        読者像：新卒1〜3年目の未経験エンジニア/SES/フリーランス志望者。<br class="sp-only">
+        As‑Is/To‑Beの差分を可視化し、30‑60‑90日計画で実装まで落とし込む“コンサル調”ガイド。
       </p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="#experience">読む</a>
@@ -64,64 +62,117 @@
     <!-- 本文 -->
     <article class="article" id="experience">
       <header class="article__header">
-        <h2 class="article__title">新卒3年目、SESからエンジニア転職を決意した僕のリアルな体験談</h2>
-        <p class="article__lead">こんにちは。僕は25歳、非情報系学部出身で新卒3年目にSES企業からITエンジニアへ転身を果たしました。日々の葛藤と学びを、飾らずお伝えします。</p>
+        <h2 class="article__title">新卒3年目、SESからWeb系へ。再現性重視で「転職/フリーランス」を設計する</h2>
+        <p class="article__lead">対象は新卒1〜3年目・未経験エンジニア・SES出身・フリーランス転向志望者。<br>本稿は“根性論”ではなく、<strong>As‑Is/To‑Beの差分 → 30‑60‑90日計画 → KPI → リスク/打ち手</strong>という順で処方箋を提示します。私自身は非情報系出身から出発し、年収<strong>320→420万円</strong>、その後に準委任案件で月<strong>35〜55万円</strong>のレンジへ。数字は一例ですが、<em>再現性のある行動</em>は誰でも設計できます。</p>
       </header>
 
       <div class="cta reveal">
-        <a href="https://px.a8.net/affiliate-code" target="_blank" rel="noopener noreferrer"
-          class="btn btn--accent">【無料相談】レバテックキャリア</a>
+        <a href="#agents" class="btn btn--accent">【選べる】エージェント/学習サービスを比較する</a>
       </div>
 
       <section class="section reveal">
-        <h3>1. スキルがつかない毎日に「このままでいいのか」と悩んだ日々</h3>
-        <p>SESでは「画面から本番環境のデータを手作業で修正するだけ」という作業が日課に。資格も経験もないまま同じ作業を繰り返し、将来に不安を募らせました。</p>
+        <h3>1. As‑Is（現状）を3軸で棚卸し</h3>
+        <p><strong>スキル軸：</strong>言語/FW/DB/クラウド/テストの到達度を「閲覧可・修正可・新規可・設計可」で自己評価。<br>
+           <strong>実績軸：</strong>GitHubのコミットは“線（Issue→PR→README）”で示す。模写ではなく用途のあるミニアプリを1本。<br>
+           <strong>職務軸：</strong>担当フェーズ（要件/設計/実装/テスト/運用）と成果を箇条書き。定量（MTTR/件数/工数）で表す。</p>
+        <p>棚卸しの成果物は面接でも再利用できます。まずは<strong>1シート</strong>に集約しましょう。</p>
       </section>
 
       <section class="section reveal">
-        <h3>2. フリーランスか転職か…迷いながらもエージェントに相談</h3>
-        <p>YouTubeでフリーランスの魅力を知るも、自分の経験不足を痛感。マイナビ経由でエージェント面談を受けた結果、中途採用枠扱いと告げられ、自信が揺らぎました。</p>
+        <h3>2. To‑Be（目標）を“職能×業種×働き方”で定義</h3>
+        <p>例）<em>職能：</em>サーバサイドエンジニア（Laravel/Node）→<em>業種：</em>Webプロダクト→<em>働き方：</em>正社員 or 準委任（のちフリーランス）。<br>
+        これを基に<strong>必須スキル</strong>と<strong>Nice to have</strong>に分解し、採用要件と差分を明文化します。</p>
       </section>
 
       <section class="section reveal">
-        <h3>3. 先輩との対話、そしてついに決意</h3>
-        <p>60歳の先輩に相談した一言「もう答えは出ているんじゃない？」が胸に刺さり、自ら転職を決意。上司交渉を経て現場変更に成功しました。</p>
+        <h3>3. Gap（差分）→ 30‑60‑90日計画</h3>
+        <p><strong>30日：</strong>Web基礎、CRUD/API、DB正規化、簡易テスト。ミニアプリを1本完成（README付）。<br>
+           <strong>60日：</strong>認証/権限、検索、画像アップロード、ページング、Docker化、CI導入。<br>
+           <strong>90日：</strong>Cloud（S3等）・監視・E2Eテスト。小規模チーム想定でIssue/PRテンプレ運用。</p>
+        <p>毎週レビューを入れ、<em>「動くもの→説明できるもの→再利用できるもの」</em>の順で成熟度を上げます。</p>
+      </section>
+
+      <section class="section reveal">
+        <h3>4. KPI設計（コンサル調の指標）</h3>
+        <p>学習時間は<strong>週10〜15時間</strong>。KPIは以下の例でモニタリング：</p>
+        <p>・週次コミット：<strong>20+</strong>、Issue→PRの連結率：<strong>80%</strong><br>
+           ・学習アウトプット：記事<strong>1本/週</strong>、コード公開<strong>3回/週</strong><br>
+           ・応募：<strong>5〜10社/週</strong>、一次通過率：<strong>20〜30%</strong> を目標に改善サイクル。</p>
+      </section>
+
+      <section class="section reveal">
+        <h3>5. 面接はSTARで“再現性”を提示</h3>
+        <p><strong>S（状況）→T（課題）→A（打ち手）→R（結果）</strong>で語る。抽象語を削り、<em>数値と事実</em>で示す。<br>
+        例）障害対応でMTTRを<strong>45分→18分</strong>に短縮（再現手順・監視・優先度の設計）。学びはチェックリスト化。</p>
+      </section>
+
+      <section class="section reveal">
+        <h3>6. ポートフォリオは「5分で価値が伝わる」設計</h3>
+        <p>トップREADMEに<strong>課題→価値→機能→構成→テスト→今後</strong>を1画面で。<br>
+        認証、CRUD、検索、ファイル、通知、外部APIの1本貫通を最優先。スクショ・GIF・簡易アーキ図を添付。</p>
+      </section>
+
+      <section class="section reveal">
+        <h3>7. キャリア選択肢：正社員 / 準委任 / フリーランス</h3>
+        <p><strong>正社員：</strong>育成資源と評価制度の恩恵。初年度年収<strong>350〜500万円</strong>レンジが目安。<br>
+           <strong>準委任：</strong>月<strong>35〜70万円</strong>。実務と自己管理が鍵。<br>
+           <strong>フリーランス：</strong>商流/営業/税務の難易度が上がるため、<em>まず準委任から</em>を推奨。</p>
+      
+      <section class="section reveal">
+        <h3>7.5 転職前後の給料（手取りベースの実データ）</h3>
+        <p><strong>転職前：</strong>月の手取りは<strong>18万円</strong>。賞与は年2回で<strong>20万円/回</strong>（年間<strong>40万円</strong>）。</p>
+        <p><strong>転職後：</strong>月の手取りは<strong>35万円</strong>。</p>
+        <p>※ 手取り額は社会保険料・住民税・各種控除の条件で個人差があります。本サイトでは比較の目安として提示しています。</p>
+      </section>
+
+      <section class="section reveal">
+        <h3>8. 年収・条件交渉の型</h3>
+        <p>「貢献仮説」を提示：入社3ヶ月で<strong>◯◯</strong>、6ヶ月で<strong>△△</strong>。KPIと検収基準を共通言語化。<br>
+        初回提示額が期待に届かない場合は、<em>到達目標とタイムライン</em>をセットで見直しを依頼。</p>
       </section>
 
       <div class="cta reveal">
-        <a href="https://px.a8.net/affiliate-code2" target="_blank" rel="noopener noreferrer"
-          class="btn btn--accent">【無料登録】Geekly</a>
+        <a href="#agents" class="btn btn--primary">【アフィリエイト】サービスを比較して選ぶ</a>
       </div>
 
       <section class="section reveal">
-        <h3>4. 初めての開発現場。「向いてないかも…」という壁</h3>
-        <p>Laravel、PHP、JavaScriptの本物のコードに触れた喜びの裏で、環境構築に苦戦。Udemyで学習を続け、自信を少しずつ取り戻しました。</p>
+        <h3>9. よくある失敗と回避策</h3>
+        <p><strong>点学習</strong>→<em>線にする</em>（要件→実装→レビュー→改善）。<br>
+           <strong>独りよがりPF</strong>→ユースケース駆動＋最小テスト＋CI。<br>
+           <strong>抽象受け答え</strong>→STARと数値で具体化。</p>
       </section>
 
       <section class="section reveal">
-        <h3>5. 現場移動、炎上案件、そして“退職”の決断</h3>
-        <p>炎上案件でテストカバレッジ100%の無理難題が続き、ストレス限界で退職。辞めた瞬間は解放感に包まれました。</p>
+        <h3>10. 退職・引継ぎの実務</h3>
+        <p>チェックリスト化（作業→順序→完了条件）。事実ベースで進行。感謝は別軸で丁寧に。</p>
       </section>
 
       <section class="section reveal">
-        <h3>6. 無職期間、焦り、そして資格勉強</h3>
-        <p>無職の焦燥感からJava Bronze・Silver資格に挑戦し、プレッシャーの中で2つとも合格。再び市場価値を取り戻しました。</p>
+        <h3>11. メンタル/生活の土台</h3>
+        <p>睡眠/運動/食事/日光の4点固定。朝散歩と就寝前スクリーン断ち。焦る日は“手を動かす”に集中。</p>
       </section>
 
       <section class="section reveal">
-        <h3>7. フリーランスエージェントで面談、そしてチャンスを掴む</h3>
-        <p>フリーランスエージェントで5社面談、1社で採用決定。タイミングと行動が大切だと痛感しました。</p>
+        <h3>12. 1年後の振り返りと今後</h3>
+        <p>続けられる仕組み（テンプレ/週次レビュー/習慣）が最大のレバレッジ。短期は基礎強化、中期はプロダクト志向、長期は<strong>誰と何を作るか</strong>で設計。</p>
       </section>
 
-      <section class="section reveal section--closing">
-        <h3>8. まとめ 〜 迷っているあなたへ</h3>
-        <p>優秀でなくても、行動した人にだけチャンスが訪れる。迷っているなら、まずは一歩踏み出してみてください。</p>
+      <!-- ▼ アフィリエイト：選べるサービス一覧（見た目は既存クラスのみ使用） -->
+      <section class="section reveal" id="agents">
+        <h3>13. 【選べる】エージェント/学習サービス（読者が選択）</h3>
+        <p>以下は例示です。リンクは後で差し替え可能。<em>広告（アフィリエイト）を含む場合があります。</em></p>
+        <p>■ エージェント例（50音順・名称のみ記載）：<br>
+           ・レバテックキャリア / Geekly / doda（IT） / マイナビITエージェント / ワークポート / パーソルキャリア / パソナテック / Forkwell エージェント / Findy / Green（転職サイト）</p>
+        <p>■ 学習/ポートフォリオ支援例：<br>
+           ・Udemy / ドットインストール / Progate / Paizaラーニング / スタック共有（Qiita/Zenn）</p>
+        <p>※ それぞれの長所短所は記事内の要件定義に照らして比較してください。リンク先は <strong>rel="sponsored"</strong> を付け、のちほど正式URLに置換可能です。</p>
+        <div class="cta">
+          <a href="#" rel="sponsored noopener" class="btn btn--accent">エージェント候補を開く（仮）</a>
+          <a href="#" rel="sponsored noopener" class="btn btn--ghost">学習サービス候補を開く（仮）</a>
+        </div>
       </section>
 
-      <div class="cta reveal">
-        <a href="https://px.a8.net/affiliate-code3" target="_blank" rel="noopener noreferrer"
-          class="btn btn--primary">転職エージェントの無料相談はこちら</a>
-      </div>
+      <!-- 追記終わり -->
     </article>
 
     <!-- サイド（シンプルなカード） -->
@@ -129,7 +180,7 @@
       <section class="card reveal">
         <h3 class="card__title">運営者プロフィール</h3>
         <img src="profile.jpg" alt="運営者の顔写真" class="card__avatar">
-        <p class="card__text">25歳／元SESエンジニア。実体験を基に転職ノウハウを発信中。</p>
+        <p class="card__text">非情報系→未経験エンジニア。As‑Is/To‑Be、30‑60‑90日計画で行動を設計するのが得意。数字と再現性で語ります。</p>
       </section>
 
       <section class="card reveal">
@@ -148,6 +199,7 @@
       <div>
         <h4 class="footer__heading">お問い合わせ</h4>
         <p><a href="mailto:info@myblog.jp">info@myblog.jp</a></p>
+        <p>本ページには広告（アフィリエイト）リンクを含む場合があります。ご理解のうえご利用ください。</p>
       </div>
       <ul class="footer__links">
         <li><a href="privacy.html">プライバシーポリシー</a></li>
@@ -158,5 +210,4 @@
 
   <script src="script.js" defer></script>
 </body>
-
 </html>
